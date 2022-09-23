@@ -3,7 +3,7 @@ package jenkins_trial;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class Practice1 {
+public class Practice1Test {
 	
 	@Test
 	public void test1()
