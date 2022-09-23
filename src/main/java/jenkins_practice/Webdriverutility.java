@@ -9,7 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Webdriverutility {
+	
 	private WebDriver driver;
+	
 	public WebDriver openBrowser(String browser) 
 	{
 		
@@ -71,12 +73,11 @@ public class Webdriverutility {
 	 */
 	public WebDriver openBrowserWithApplication(String browser,long time,String url)
 	{
-		WebDriver driver = openBrowser(browser);
+		driver = openBrowser(browser);
 		maximizeBrowser(driver);
 		pageWaitTillLoad(driver,time);
 		navigateToApplication(driver,url);
 		return driver;
-		
 	}
 
 }
