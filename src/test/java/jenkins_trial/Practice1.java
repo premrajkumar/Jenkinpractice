@@ -8,12 +8,12 @@ public class Practice1 {
 	@Test
 	public void test1()
 	{
-		System.out.println("test1");
+		Reporter.log("test1", true);
 	}
 
 	@Test
 	public void test2()
 	{
-		System.out.println("test2");
+		Reporter.log("test2", true);
 	}
 }
