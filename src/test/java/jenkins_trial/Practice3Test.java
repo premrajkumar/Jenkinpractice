@@ -14,6 +14,7 @@ public class Practice3Test {
 		String url = System.getProperty("ul");
 		System.out.println(browser);
 		System.out.println(url);
-		WebDriver driver = new Webdriverutility().openBrowserWithApplication(browser, 15, url);
+		WebDriver driver = new Webdriverutility().openBrowser(browser);
+		new Webdriverutility().navigateToApplication(driver, url);
 	}
 }
